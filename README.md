@@ -137,8 +137,11 @@ score就是对于wide & deep模型的一次 forward pass。
 ## 问题四：什么情况下使用动量优化器？（机器学习）<a name='问题四什么情况下使用动量优化器-机器学习'></a>
 
 > 回答者1：Rulcy
+
 我只能说出来基于动量的优化器有两个优点：1、优化速度更快。2、更容易跳脱局部最优点。
+
 > 回答者2：Hirah
+
 动量优化器应对poor conditioning Hessian matrix有优势，用符合直觉的方法来解释就是不同维度的优化函数陡峭程度不一样的时候，动量优化器比SGD好。
 动量优化器比SGD还有一个优势，SGD mini-batch之间如果方差大的话优化路径会发生震荡，加入动量可以改善这个。
 Ian goodfellow的花书讲到动量的时候就讲了这两个motivations。
