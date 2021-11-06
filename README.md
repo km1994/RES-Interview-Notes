@@ -14,7 +14,38 @@
 
 
 - [推荐系统 百面百搭](#推荐系统-百面百搭)
-  - [](#)
+  - [机器学习基础](#机器学习基础)
+    - [Batch Normalization 相关问题](#batch-normalization-相关问题)
+    - [逻辑斯蒂回归（LR, Logistic Regression)是什么、怎么推导？](#逻辑斯蒂回归lr-logistic-regression是什么怎么推导)
+    - [交叉熵与softmax 是 什么？有什么区别？](#交叉熵与softmax-是-什么有什么区别)
+    - [交激活函数 是 什么？有什么作用？](#交激活函数-是-什么有什么作用)
+    - [泛化误差（过拟合） 问题？](#泛化误差过拟合-问题)
+    - [SVM 是什么、怎么推导？](#svm-是什么怎么推导)
+    - [约束优化问题的对偶问题](#约束优化问题的对偶问题)
+    - [Dropout 是什么？](#dropout-是什么)
+    - [评价指标？](#评价指标)
+    - [正则化L1,L2？](#正则化l1l2)
+    - [权重初始化？](#权重初始化)
+    - [决策树是什么、怎么推导？](#决策树是什么怎么推导)
+    - [优化算是什么？](#优化算是什么)
+    - [线性判别分析是什么？](#线性判别分析是什么)
+    - [KMeans是什么？](#kmeans是什么)
+    - [牛顿法 是什么？](#牛顿法-是什么)
+    - [缺失值的处理？](#缺失值的处理)
+    - [模型评估中常用的验证方法](#模型评估中常用的验证方法)
+    - [主成分分析](#主成分分析)
+    - [Softmax函数的特点和作用是什么](#softmax函数的特点和作用是什么)
+    - [样本不均衡是什么](#样本不均衡是什么)
+    - [损失函数](#损失函数)
+    - [贝叶斯决策论](#贝叶斯决策论)
+    - [采样](#采样)
+  - [集成学习](#集成学习)
+    - [Boosting vs Bagging？](#boosting-vs-bagging)
+    - [梯度提升决策树GBDT/MART (Gradient Boosting Decision Tree)是什么？](#梯度提升决策树gbdtmart-gradient-boosting-decision-tree是什么)
+  - [深度学习基础](#深度学习基础)
+    - [VGG使用使用3*3卷积核的优势是什么？](#vgg使用使用33卷积核的优势是什么)
+    - [卷积是什么、怎么推导？](#卷积是什么怎么推导)
+    - [pooling有什么意义，和卷积有什么区别](#pooling有什么意义和卷积有什么区别)
   - [广告算法（系统）、推荐算法（系统）、搜索算法（系统）有什么异同？](#广告算法系统推荐算法系统搜索算法系统有什么异同)
   - [线下提升线上效果不好](#线下提升线上效果不好)
   - [XGBoost和GBDT是什么？有什么区别？](#xgboost和gbdt是什么有什么区别)
@@ -97,7 +128,231 @@
   - [问题一：召回模型中，模型评价指标怎么设计？（推荐）](#问题一召回模型中模型评价指标怎么设计推荐)
   - [参考](#参考)
 
-## 
+
+## 机器学习基础
+
+### Batch Normalization 相关问题
+
+1. 什么是 Batch Normalization？
+2. Batch Normalization 多卡同步 的动机？
+3. Batch Normalization 多卡同步 的原理？
+4. Batch Normalization 多卡同步 的操作(pytorch)？
+
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
+
+### 逻辑斯蒂回归（LR, Logistic Regression)是什么、怎么推导？
+
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
+
+### 交叉熵与softmax 是 什么？有什么区别？
+
+1. 交叉熵 数学原理？
+2. 交叉熵 损失函数？
+3. 交叉熵不适用于回归问题？
+4. 交叉熵与softmax 的 区别？
+5. 为什么softmax分母是所有类别的加权和？
+6. 为什么要引入指数形式？
+7. 为什么不用2、4、10等自然数为底而要以 e 为底呢？
+8. 为什么分母是所有类别的加权和？
+9. 为什么要引入指数形式？
+
+- [答案1](https://zhuanlan.zhihu.com/p/429901476)
+- [答案2](https://www.jianshu.com/p/1536f98c659c)
+
+### 交激活函数 是 什么？有什么作用？
+
+1. 激活函数的主要作用？
+
+- [答案1](https://zhuanlan.zhihu.com/p/429901476)
+
+### 泛化误差（过拟合） 问题？
+
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
+
+### SVM 是什么、怎么推导？
+
+1. SVM 基本原理、意义?
+2. SVM推导?
+3. SVM 核函数 是什么？
+4. SVM 核函数作用 是什么？
+5. SVM 核函数 有哪些？
+6. SVM 核函数 怎么选择？
+7. SVM 软间隔与损失函数
+
+- [答案-》10. SVM](https://zhuanlan.zhihu.com/p/429901476)
+
+### 约束优化问题的对偶问题
+
+- [答案-》11. 约束优化问题的对偶问题](https://zhuanlan.zhihu.com/p/429901476)
+
+### Dropout 是什么？
+
+1. 为什么 需要用 Dropout？
+2. Dropout 原理？
+3. Dropout 训练与测试
+4. Dropout 为什么可以减轻过拟合？
+5. BN和Dropout共同使用出现的问题?
+
+- [答案-》11.Dropout](https://zhuanlan.zhihu.com/p/429901476)
+
+### 评价指标？
+
+- [答案-》12. 评价指标](https://zhuanlan.zhihu.com/p/429901476)
+
+### 正则化L1,L2？
+
+1. 什么是正则化?
+2. L1正则化 是什么？
+3. L2正则化 是什么？
+4. L1和L2正则化的区别？
+
+- [答案-》13.正则化L1,L2](https://zhuanlan.zhihu.com/p/429901476)
+
+### 权重初始化？
+
+1. 是否可以将权重初始化为0？
+
+- [答案-》14.权重初始化](https://zhuanlan.zhihu.com/p/429901476)
+
+### 决策树是什么、怎么推导？
+
+1. 决策树是什么？
+2. ID3 是什么？
+   1. 什么是 信息增益？
+3. C4.5 是什么？
+   1. 什么是 增益率
+4. CART决策树 是什么？
+   1."基尼指数" (Gini index)  是什么？
+5. 剪枝策略？
+6. 缺失值处理？
+   1. 如何在属性值缺失的情况F进行划分属性选择?
+   2. 给定划分属性?若样本在该属性上的值缺失，如何对样本进行划分?
+7. LR、决策树、SVM的选择与对比
+
+- [答案-》15. 决策树](https://zhuanlan.zhihu.com/p/429901476)
+
+### 优化算是什么？
+
+1. 优化算法是什么？
+2. 梯度下降法的含义 是什么？
+3. 什么是 批量梯度下降法 （Batch Gradient Descent）？
+4. 随机梯度下降（Stochastic Gradient Descent） 是什么？
+5. 什么是 小批量梯度下降（Mini-Batch Gradient Descent）
+6. 动量法（Momentum）？
+7. Nesterov Momentum（Nesterov Accelerated Gradient？
+8. Adagrad法
+9. Adadelta/RMSprop
+10. Adam：Adaptive Moment Estimation自适应矩估计
+
+- [答案-》17.优化算法](https://zhuanlan.zhihu.com/p/429901476)
+
+### 线性判别分析是什么？
+
+1. 线性判别分析(linear discriminant analysis，LDA)是什么？
+2. LDA与PCA 异同点 是什么？
+3. LDA优缺点  是什么？
+
+- [答案-》18. 线性判别分析](https://zhuanlan.zhihu.com/p/429901476)
+
+### KMeans是什么？
+
+1. KMeans是什么？
+2. KMeans 优缺点  是什么？
+
+- [答案-》21.KMeans](https://zhuanlan.zhihu.com/p/429901476)
+
+### 牛顿法 是什么？
+
+1. 牛顿法 是什么？
+
+- [答案-》22. 牛顿法](https://zhuanlan.zhihu.com/p/429901476)
+
+### 缺失值的处理？
+
+1. 缺失值的原 是什么？
+2. 具体算法的缺失值处理？
+
+- [答案-》23. 缺失值的处理](https://zhuanlan.zhihu.com/p/429901476)
+
+### 模型评估中常用的验证方法
+
+1. Holdout检验 是什么？
+2. 交叉检验 是什么？
+3. 自助法 是什么？
+
+- [答案-》24. 模型评估中常用的验证方法](https://zhuanlan.zhihu.com/p/429901476)
+
+### 主成分分析
+
+1. 主成分分析 是什么？
+
+- [答案-》25. 主成分分析](https://zhuanlan.zhihu.com/p/429901476)
+
+### Softmax函数的特点和作用是什么
+
+1. Softmax函数的特点和作用是什么？
+
+- [答案-》26.Softmax函数的特点和作用是什么](https://zhuanlan.zhihu.com/p/429901476)
+
+### 样本不均衡是什么
+
+1. 导致模型性能降低的本质原因是什么？
+2. 导致模型性能降低的解决办法是什么？
+
+- [答案-》27.样本不均衡](https://zhuanlan.zhihu.com/p/429901476)
+
+### 损失函数
+
+- [答案-》 28.损失函数](https://zhuanlan.zhihu.com/p/429901476)
+
+### 贝叶斯决策论
+
+- [答案-》29.贝叶斯决策论](https://zhuanlan.zhihu.com/p/429901476)
+
+### 采样
+
+- [答案-》30.采样](https://zhuanlan.zhihu.com/p/429901476)
+
+## 集成学习
+
+### Boosting vs Bagging？
+
+1. Bagging和Boosting的区别？
+2. 决策树、GBDT、XGBoost 区别与联系？
+3. XGBoost 是什么？
+4. Boosting 是什么？
+5. Bagging 是什么？
+6. 从减小偏差和方差来解释Boosting和Bagging？
+7. 随机森林(RF) 是什么？
+
+- [答案-》16. Boosting vs Bagging](https://zhuanlan.zhihu.com/p/429901476)
+
+### 梯度提升决策树GBDT/MART (Gradient Boosting Decision Tree)是什么？
+
+1. 梯度提升决策树GBDT/MART (Gradient Boosting Decision Tree)是什么？
+2. 梯度提升与梯度下降关系 是什么？
+3. 梯度提升决策树GBDT/MART (Gradient Boosting Decision Tree) 优缺点  是什么？
+
+- [答案-》20.梯度提升决策树GBDT/MART (Gradient Boosting Decision Tree)](https://zhuanlan.zhihu.com/p/429901476)
+
+
+## 深度学习基础
+
+### VGG使用使用3*3卷积核的优势是什么？
+
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
+
+### 卷积是什么、怎么推导？
+
+1. 卷积 原理？
+2. 什么是 反卷积？
+3. 什么是空洞卷积？
+  
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
+
+### pooling有什么意义，和卷积有什么区别
+
+- [答案](https://zhuanlan.zhihu.com/p/429901476)
 
 ## 广告算法（系统）、推荐算法（系统）、搜索算法（系统）有什么异同？
 
@@ -1349,3 +1604,4 @@ score就是对于wide & deep模型的一次 forward pass。
 ## 参考
 
 1. [推荐系统面经48题总结版（完）](https://zhuanlan.zhihu.com/p/422464069)
+2. [6万字解决算法面试中的深度学习基础问题（一）](https://zhuanlan.zhihu.com/p/429901476)
