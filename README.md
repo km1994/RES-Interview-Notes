@@ -190,7 +190,7 @@
 
 ## [二、推荐系统机器学习篇](traditional_recommendation_model/)
 
-### [2.1 【关于 协同过滤篇】那些你不知道的事](traditional_recommendation_model/collaborative_filtering/)
+### [2.1 【关于 协同过滤篇】那些你不知道的事](https://articles.zsxq.com/id_lje4bgibeb4i.html)
 
 - 一、基础篇
   - 1.1 什么是协同过滤？
@@ -209,11 +209,7 @@
   - 4.2 User-CF-Based 与 Item-CF-Based 的存在问题的区别
 - 五、User-CF-Based 与 Item-CF-Based 问题篇
 
-
-
-
-
-### [2.2【关于 矩阵分解篇】那些你不知道的事](traditional_recommendation_model/matrix_factorization/)
+### [2.2【关于 矩阵分解篇】那些你不知道的事](https://articles.zsxq.com/id_4hjo78at5lj8.html)
 
 - 一、动机篇
   - 1.1 为什么 需要 矩阵分解？
@@ -228,7 +224,7 @@
 - 四、矩阵分解 优缺点篇
   - 4.1 矩阵分解 存在什么问题？
 
-### [2.3 【关于 逻辑回归篇】 那些你不知道的事](traditional_recommendation_model/logistic_regression/)
+### [2.3 【关于 逻辑回归篇】 那些你不知道的事](https://articles.zsxq.com/id_3kstrwlvfuw0.html)
 
 - 一、动机篇
   - 1.1 为什么 需要 逻辑回归？
@@ -244,13 +240,13 @@
   - 5.1 逻辑回归 有哪些优点？
   - 5.2 逻辑回归 有哪些缺点？
 
-### [2.4 【关于POLY2篇】那些你不知道的事](traditional_recommendation_model/POLY2/)
+### [2.4 【关于POLY2篇】那些你不知道的事](https://articles.zsxq.com/id_360m8rlaijqn.html)
 
 - 一、为什么要使用 POLY2？
 - 二、POLY2 的思路是什么？
 - 三、POLY2 存在什么问题？
   
-### [2.5 【关于FM篇】那些你不知道的事](traditional_recommendation_model/FM/)
+### [2.5 【关于FM篇】那些你不知道的事](https://articles.zsxq.com/id_4zqld440t2lm.html)
 
 - 一、为什么要使用 FM？
 - 二、FM 的思路是什么？
@@ -258,13 +254,13 @@
 - 四、FM 的缺点？
 - 五、POLY2 vs FM？
 
-### [2.6 【关于FFM篇】那些你不知道的事](traditional_recommendation_model/FFM/)
+### [2.6 【关于FFM篇】那些你不知道的事](https://articles.zsxq.com/id_uz5p2ategto9.html)
 
 - 一、为什么要使用 FFM？
 - 二、FFM 的思路是什么？
 - 三、FM vs FFM？
 
-### [2.7 【关于GBDT+LR篇】那些你不知道的事](traditional_recommendation_model/GBDT_LR/)
+### [2.7 【关于GBDT+LR篇】那些你不知道的事](https://articles.zsxq.com/id_0l5gdn0wjtsp.html/)
 
 - 一、动机篇
   - 1.1 为什么 需要 GBDT+LR？
@@ -289,21 +285,21 @@
 
 ### 2.8 LS-PLM 算法篇
 
-## 三、推荐系统 深度学习篇
+## 三、[推荐系统 深度学习篇](https://articles.zsxq.com/id_edofa1m861x3.html)
 
-### 3.1 AutoRec 篇
+### 3.1 [AutoRec 篇](https://articles.zsxq.com/id_dntrd6igjk9i.html)
 
-### 3.2 NeuralCF模型 篇
+### 3.2 [NeuralCF模型 篇](https://articles.zsxq.com/id_bjd8e1r6kow3.html)
 
-### 3.3 Deep Crossing模型 篇
+### 3.3 [Deep Crossing模型 篇](https://articles.zsxq.com/id_wl94fgqn0r5t.html)
 
 ### 3.4 PNN 模型 篇
 
-### 3.5 Wide＆Deep模型 篇
+### 3.5 [Wide＆Deep模型 篇](https://articles.zsxq.com/id_di0tp2qalgdx.html)
 
-### 3.6 FM与深度学习模型的结合 篇
+### 3.6 [FM与深度学习模型的结合 篇](https://articles.zsxq.com/id_wpbdemx6amp9.html)
 
-### 3.7 注意力机制在推荐模型中的应用篇
+### 3.7 [注意力机制在推荐模型中的应用篇](https://articles.zsxq.com/id_52lnln09rx9t.html)
 
 ### 3.8 DIEN 篇
 
